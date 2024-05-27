@@ -1,111 +1,154 @@
 body {
-     margin: 0;
-     font-family: Arial, sans-serif;
-     direction: rtl;
- background-color: #001320;
-     color: black;
- }
- .white{
-     color: white;
- }
- .navbar {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #001320;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.night-mode {
+    background-color: white;
+    color: #f4f4f4;
+}
+
+.white {
+    color: white;
+}
+
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: teal; /* تغيير الخلفية إلى اللون المناسب */
-    padding: 0px 0; /* إضافة هامش أعلى وأسفل */
+    padding: 10px 0; /* إضافة هامش أعلى وأسفل */
     z-index: 1000; /* تأكيد أنه يظهر أعلى العناصر الأخرى */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* إضافة ظل */
 }
+
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    display: inline-block; /* إظهار العناصر في سطر واحد */
+    display: flex; /* استخدام flexbox لترتيب العناصر */
+    justify-content: flex-end; /* لترتيب العناصر على اليمين */
+    align-items: center;
 }
+
 .navbar ul li {
-    float: right; /* لترتيب العناصر على اليمين */
     margin-right: 30px; /* تباعد بين العناصر */
 }
-.navbar ul li h1{
-    float: right; /* لترتيب العناصر على اليمين */
-    margin-right: 800px;
+
+.navbar ul li h1 {
+    margin-right: auto; /* يدفع العنوان إلى اليسار */
+    margin-left: 30px;
 }
+
 .navbar ul li a {
     display: block;
     color: white; /* لون النص */
     text-align: center;
     padding: 15px 15px;
     text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; /* إضافة زوايا دائرية */
 }
+
 .navbar ul li a:hover {
     background-color: #0c0c0c; /* تغيير لون الخلفية عند التحويل */
+    color: teal; /* تغيير لون النص عند التحويل */
 }
- body {
-     margin: 0;
-     padding: 0;
-     font-family: Arial, sans-serif;
-     direction: rtl;
-     background-color:#001320 ;
- }
- 
- .social-icons {
-     text-align: center;
-     margin-top: 50px;
- }
- 
- .icon {
-     display: inline-block;
-     margin: 0 10px;
-     font-size: 24px;
-     color:teal; /* لون الرموز */
-     text-decoration: none;
-     transition: color 0.3s;
- }
- 
- .icon:hover {
-     color: #007bff; /* لون الرمز عند التحويل */
- }
- .h2{
-     color: white;
-     text-align: center;
- }
- header {
-     background-color: teal; /* تغيير الخلفية إلى لون رمادي داكن */
-  
-  } 
-  body.night-mode {
-      background-color: white; 
-      color: black; 
-  }
-  .image-container{
-      text-align: center;
-  }
-  .lefttest { 
-      color: teal;
-      text-align: left;
-  }
-  
-  .zoomable-image {
-      transition: transform 0.2s;
-  }
-  
-  .zoomable-image:hover {
-      transform: scale(1.1);
-  }
-  
-  .video-container {
-      text-align: center;
-  }
-  
-  .left {
-      text-align: left;
-      color: aliceblue;
-  }
+
 #night-mode-button {
- margin-right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    color: white;
+    transition: transform 0.3s;
 }
+
+#night-mode-button:hover {
+    transform: rotate(20deg); /* تدوير الزر عند التحويم */
+}
+
+.lefttest {
+    color: teal;
+    text-align: left;
+    margin: 100px 20px 20px; /* إضافة تباعد علوي */
+}
+
+.gallery {
+    margin: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* تباعد بين الصور */
+    text-align: center;
+}
+
+.image-container img {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* إضافة ظل للصورة */
+}
+
+.zoomable-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* تعزيز الظل عند التحويم */
+}
+
+.video-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
 #vote-container {
     text-align: center;
-    margin-top: 50px;
+    margin: 50px 0;
+}
+
+#vote-up, #vote-down {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px; /* إضافة زوايا دائرية */
+}
+
+#vote-up:hover, #vote-down:hover {
+    background-color: #0c0c0c;
+    transform: scale(1.1); /* تكبير الأزرار عند التحويم */
+}
+
+#vote-result {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.social-icons {
+    text-align: center;
+    margin: 50px 0; /* إضافة تباعد علوي وسفلي */
+}
+
+.social-icons .icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: teal; /* لون الرموز */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons .icon:hover {
+    color: #007bff; /* لون الرمز عند التحويل */
 }
