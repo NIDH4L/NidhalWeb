@@ -67,10 +67,31 @@
     <div class="video-container">
         <iframe title="vimeo-player" src="https://player.vimeo.com/video/950604365?h=d646e73081" width="800" height="400" frameborder="0"    allowfullscreen></iframe>
     </div>
-</body>
-</html>
-    <br>
-    <br>
-    <h2 class="h2">nothing :(</h1>
+          <div id="vote-container">
+        <h2 class="white">who is the goat</h2>
+        <button  id="vote-up" onclick="vote('up')">Ronaldo</button>
+        <button  id="vote-down" onclick="vote('down')">Messi</button>
+        <p id="vote-result"></p>
+    </div>
+    <script>
+        let votes = {
+    up: 0,
+    down: 0
+};
+
+function vote(type) {
+    if (type === 'up') {
+        votes.up++;
+    } else if (type === 'down') {
+        votes.down++;
+    }
+    displayResult();
+}
+
+function displayResult() {
+    const result = document.getElementById('vote-result');
+    result.textContent = ` LM: ${votes.down} | CR7: ${votes.up}`;
+}
+    </script> 
 </body>
 </html>
