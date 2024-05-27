@@ -1,0 +1,104 @@
+body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     direction: rtl;
+ background-color: #001320;
+     color: black;
+ }
+ .white{
+     color: white;
+ }
+ .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: teal; /* تغيير الخلفية إلى اللون المناسب */
+    padding: 0px 0; /* إضافة هامش أعلى وأسفل */
+    z-index: 1000; /* تأكيد أنه يظهر أعلى العناصر الأخرى */
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block; /* إظهار العناصر في سطر واحد */
+}
+.navbar ul li {
+    float: right; /* لترتيب العناصر على اليمين */
+    margin-right: 30px; /* تباعد بين العناصر */
+}
+.navbar ul li h1{
+    float: right; /* لترتيب العناصر على اليمين */
+    margin-right: 800px;
+}
+.navbar ul li a {
+    display: block;
+    color: white; /* لون النص */
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+.navbar ul li a:hover {
+    background-color: #0c0c0c; /* تغيير لون الخلفية عند التحويل */
+}
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     direction: rtl;
+     background-color:#001320 ;
+ }
+ 
+ .social-icons {
+     text-align: center;
+     margin-top: 50px;
+ }
+ 
+ .icon {
+     display: inline-block;
+     margin: 0 10px;
+     font-size: 24px;
+     color:teal; /* لون الرموز */
+     text-decoration: none;
+     transition: color 0.3s;
+ }
+ 
+ .icon:hover {
+     color: #007bff; /* لون الرمز عند التحويل */
+ }
+ .h2{
+     color: white;
+     text-align: center;
+ }
+ header {
+     background-color: teal; /* تغيير الخلفية إلى لون رمادي داكن */
+  
+  } 
+  body.night-mode {
+      background-color: white; 
+      color: black; 
+  }
+  .image-container{
+      text-align: center;
+  }
+  .lefttest { 
+      color: teal;
+      text-align: left;
+  }
+  
+  .zoomable-image {
+      transition: transform 0.2s;
+  }
+  
+  .zoomable-image:hover {
+      transform: scale(1.1);
+  }
+  
+  .video-container {
+      text-align: center;
+  }
+  
+  .left {
+      text-align: left;
+      color: aliceblue;
+  }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Icons</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-+BNh3QDLJm+A04oUG5KZyRi5jGaULwBmxpO1UfshWEnSx3mXet5E+BwkYk4anCr8" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+          <li><a href="MyAcounts.html">MyAcounts</a></li>
+         <li><a href="services.html">services</a></li>
+            <li><a href="home.html">home</a></li>
+            <li><h1 class="white">nidhal web</h1></li>
+        </ul>
+        </nav>
+        <button onclick="toggleNightMode()" id="night-mode-button">☀️</button>
+    <script>
+        function toggleNightMode() {
+            var body = document.body;
+            body.classList.toggle('night-mode');
+            var button = document.getElementById('night-mode-button');
+            button.textContent = body.classList.contains('night-mode') ? '🌙' : '☀️';
+        }
+
+        function toggleNav() {
+            var nav = document.querySelector('.nav-links');
+            nav.classList.toggle('nav-active');
+        }
+    </script>
+       <br>
+       <br>
+       <br>
+    <h2 class="h2">my gmail : snaiper.dz14@gmail.com</h2>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/nidhal._.21/" class="icon">My instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100014858920613" class="icon">My facebook</a>
+
+    </div>
+</body>
+</html>
