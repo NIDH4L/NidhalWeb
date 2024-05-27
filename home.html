@@ -67,5 +67,31 @@
     <div class="video-container">
         <iframe title="vimeo-player" src="https://player.vimeo.com/video/949875812?h=64227aba3c" width="800" height="400" frameborder="0" allowfullscreen></iframe>
     </div>
+        <div id="vote-container">
+        <h2 class="white">who is the goat</h2>
+        <button  id="vote-up" onclick="vote('up')">GOJO</button>
+        <button  id="vote-down" onclick="vote('down')">TOJI</button>
+        <p id="vote-result"></p>
+    </div>
+    <script>
+        let votes = {
+    up: 0,
+    down: 0
+};
+
+function vote(type) {
+    if (type === 'up') {
+        votes.up++;
+    } else if (type === 'down') {
+        votes.down++;
+    }
+    displayResult();
+}
+
+function displayResult() {
+    const result = document.getElementById('vote-result');
+    result.textContent = ` toji: ${votes.down} | gojo: ${votes.up}`;
+}
+    </script>
 </body>
 </html>
