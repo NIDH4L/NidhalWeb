@@ -9,7 +9,7 @@ body {
 }
 header{    
     margin: 0;
-    padding: 0;
+    padding: 100;
     font-family: Arial, sans-serif;
     direction: rtl;
     color: black; 
