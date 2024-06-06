@@ -4,13 +4,27 @@ body {
     font-family: Arial, sans-serif;
     direction: rtl;
     background-color: rgb(0, 9, 48);
+    color: black; 
+    transition: background-color 0.3s, color 0.3s;
+}
+header{    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: rgb(0, 9, 48);
+    color: black; 
+    transition: background-color 0.3s, color 0.3s;
     background-image: url('https://i.ibb.co/B6mRkPW/T.jpg'); /* تحديد صورة الخلفية */
     background-size: 1350px 320px ; /* جعل الصورة تغطي الشاشة بالكامل */
     background-repeat: no-repeat; /* عدم تكرار الصورة */
     background-position: center top; /* تحديد موضع الصورة في الوسط */
-    color: black; 
-    transition: background-color 0.3s, color 0.3s;
 }
+footer
+{
+    background-color: rgb(0, 0, 0);
+}
+
 body.night-mode {
     background-color: white;
     color: #f4f4f4;
@@ -189,4 +203,8 @@ a {
      text-decoration: none;
     color: aliceblue;
     font-weight: bold; /* تحديد سمك الكتابة */
+}
+.center{
+text-align: center;
+color: beige;
 }
