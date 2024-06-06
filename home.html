@@ -9,10 +9,13 @@
 
         <nav class="navbar">
             <ul>
-                    <li><a  href="MyAcounts.html">MyAcounts</a></li>
-             <li><a href="services.html">football</a></li>
-                <li><a href="home.html">anime</a></li>
-                    <li><h1 class="white">nidhal web</h1></li>
+                <button onclick="toggleNightMode()" id="night-mode-button">☀️</button>
+                <li><a  href="MyAcounts.html">MyAcounts</a></li>
+                <li><a href="services.html">football</a></li>
+                   <li><a href="home.html">anime</a></li>
+                       <li><h1 class="white">nidhal web</h1></li>
+                       <h1>Nidhal web</h1>
+
             </ul>
             </nav>
             <br>
@@ -23,23 +26,23 @@
             <br>
         <br>
         <br>
-            <button onclick="toggleNightMode()" id="night-mode-button">☀️</button>
-        <script>
-            function toggleNightMode() {
-                var body = document.body;
-                body.classList.toggle('night-mode');
-                var button = document.getElementById('night-mode-button');
-                button.textContent = body.classList.contains('night-mode') ? '🌙' : '☀️';
-            }
-    
-            function toggleNav() {
-                var nav = document.querySelector('.nav-links');
-                nav.classList.toggle('nav-active');
-            }
-        </script>
+
         <br><br><br><br><br><br>
     <h1 class="lefttestB">GOJO</h1>
 <br><br>
+<script>
+    function toggleNightMode() {
+        var body = document.body;
+        body.classList.toggle('night-mode');
+        var button = document.getElementById('night-mode-button');
+        button.textContent = body.classList.contains('night-mode') ? '🌙' : '☀️';
+    }
+
+    function toggleNav() {
+        var nav = document.querySelector('.nav-links');
+        nav.classList.toggle('nav-active');
+    }
+</script>
     <h3 class="leftB">Gojo Satoru, also known as Gojo Nobara, is a fictional character from the popular anime and manga series "Jojo's Bizarre Adventure" created by Hirohiko Araki. He first appears in Part Three of the series, known as "Stardust Crusaders."
 
         Gojo Satoru is a high school student and a key member of the story's main cast. He possesses strong and captivating characteristics typical of heroic anime and manga characters, such as bravery, intelligence, and strength.
