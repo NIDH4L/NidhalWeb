@@ -12,7 +12,6 @@ header{
     padding: 0;
     font-family: Arial, sans-serif;
     direction: rtl;
-  
     color: black; 
     transition: background-color 0.3s, color 0.3s;
     background-image: url('https://i.ibb.co/B6mRkPW/T.jpg'); /* تحديد صورة الخلفية */
@@ -40,7 +39,7 @@ body.night-mode {
     width: 100%;
     background-color: teal; /* تغيير الخلفية إلى اللون المناسب */
     padding: 0px 0; /* إضافة هامش أعلى وأسفل */
-    z-index: 1000; /* تأكيد أنه يظهر أعلى العناصر الأخرى */
+    z-index: 900; /* تأكيد أنه يظهر أعلى العناصر الأخرى */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* إضافة ظل */
 }
 
@@ -55,12 +54,12 @@ body.night-mode {
 }
 
 .navbar ul li {
-    margin-right: 30px; /* تباعد بين العناصر */
+    margin-right: 0px; /* تباعد بين العناصر */
 }
 
 .navbar ul li h1 {
     margin-right: auto; /* يدفع العنوان إلى اليسار */
-    margin-left: 30px;
+    margin-left: 750px;
 }
 
 .navbar ul li a {
@@ -204,7 +203,14 @@ a {
     color: aliceblue;
     font-weight: bold; /* تحديد سمك الكتابة */
 }
-.center{
-text-align: center;
+
+.lefté{
+text-align: left;
 color: beige;
+margin: 0 20px;
+padding: 20px;
 }
+.center{
+    text-align: center;
+    color: beige;
+    }
