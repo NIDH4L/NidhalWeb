@@ -14,7 +14,7 @@ header{
     direction: rtl;
     color: black; 
     transition: background-color 0.3s, color 0.3s;
-    background-image: url('https://i.ibb.co/B6mRkPW/T.jpg'); /* تحديد صورة الخلفية */
+    background-image: url('https://i.ibb.co/p0cN6KT/unnamed.jpg'); /* تحديد صورة الخلفية */
     background-size: 1350px 320px ; /* جعل الصورة تغطي الشاشة بالكامل */
     background-repeat: no-repeat; /* عدم تكرار الصورة */
     background-position: center top; /* تحديد موضع الصورة في الوسط */
@@ -32,7 +32,6 @@ body.night-mode {
 .white {
     color: teal;
 }
-
 .navbar {
     position: fixed;
     top: 0;
@@ -51,35 +50,29 @@ body.night-mode {
     display: flex; /* استخدام flexbox لترتيب العناصر */
     justify-content: flex-end; /* لترتيب العناصر على اليمين */
     align-items: center; /* محاذاة العناصر عمودياً في المركز */
+    height:50px;
+
 }
 
 .navbar ul li {
-    margin-right: 0px; /* تباعد بين العناصر */
+    margin-right: 110px; /* تباعد بين العناصر */
 }
 
-.navbar ul li:first-child {
-    margin-right: auto; /* يدفع العنصر الأول (نضال) إلى اليسار */
-}
 
-.navbar ul li h1 {
-    margin: 0; /* إزالة أي هامش افتراضي */
-}
 
 .navbar ul li a {
     display: block;
     color: white; /* لون النص */
     text-align: center;
-    padding: 15px 15px;
+    padding: 15px 60px;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
-    border-radius: 5px; /* إضافة زوايا دائرية */
 }
 
 .navbar ul li a:hover {
-    background-color: #0c0c0c; /* تغيير لون الخلفية عند التحويل */
-    color: teal; /* تغيير لون النص عند التحويل */
-}
+    background-color: rgb(1, 110, 110); /* تغيير لون الخلفية عند التحويل */
 
+}
 #night-mode-button {
     font-size: 24px;
     background: none;
