@@ -50,16 +50,19 @@ body.night-mode {
     overflow: hidden;
     display: flex; /* استخدام flexbox لترتيب العناصر */
     justify-content: flex-end; /* لترتيب العناصر على اليمين */
-    align-items: center;
+    align-items: center; /* محاذاة العناصر عمودياً في المركز */
 }
 
 .navbar ul li {
     margin-right: 0px; /* تباعد بين العناصر */
 }
 
+.navbar ul li:first-child {
+    margin-right: auto; /* يدفع العنصر الأول (نضال) إلى اليسار */
+}
+
 .navbar ul li h1 {
-    margin-right: auto; /* يدفع العنوان إلى اليسار */
-    margin-left: 750px;
+    margin: 0; /* إزالة أي هامش افتراضي */
 }
 
 .navbar ul li a {
