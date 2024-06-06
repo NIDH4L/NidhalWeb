@@ -6,39 +6,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
 
         <nav class="navbar">
-        <ul>
-                <li><a  href="MyAcounts.html">MyAcounts</a></li>
-         <li><a href="services.html">football</a></li>
-            <li><a href="home.html">anime</a></li>
-                <li><h1 class="white">nidhal web</h1></li>
-        </ul>
-        </nav>
+            <ul>
+                    <li><a  href="MyAcounts.html">MyAcounts</a></li>
+             <li><a href="services.html">football</a></li>
+                <li><a href="home.html">anime</a></li>
+                    <li><h1 class="white">nidhal web</h1></li>
+            </ul>
+            </nav>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    <br>
-    <br>
-        <button onclick="toggleNightMode()" id="night-mode-button">☀️</button>
-    <script>
-        function toggleNightMode() {
-            var body = document.body;
-            body.classList.toggle('night-mode');
-            var button = document.getElementById('night-mode-button');
-            button.textContent = body.classList.contains('night-mode') ? '🌙' : '☀️';
-        }
-
-        function toggleNav() {
-            var nav = document.querySelector('.nav-links');
-            nav.classList.toggle('nav-active');
-        }
-    </script>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
- <br>
+            <button onclick="toggleNightMode()" id="night-mode-button">☀️</button>
+        <script>
+            function toggleNightMode() {
+                var body = document.body;
+                body.classList.toggle('night-mode');
+                var button = document.getElementById('night-mode-button');
+                button.textContent = body.classList.contains('night-mode') ? '🌙' : '☀️';
+            }
+    
+            function toggleNav() {
+                var nav = document.querySelector('.nav-links');
+                nav.classList.toggle('nav-active');
+            }
+        </script>
+        <br><br><br><br><br><br><br><br>
+ </header>
+ <br><br><br><br>
     <h1 class="lefttestB">Ronaldo</h1>
 <br><br>
     <h3 class="leftB">Cristiano Ronaldo, known as "The Don," was born on February 5, 1985, in Madeira, Portugal. He began his professional career at Sporting Lisbon before moving to Manchester United in 2003, where he won numerous titles. In 2009, he joined Real Madrid for a record fee, winning four Champions League titles and becoming the club's all-time top scorer. In 2018, he transferred to Juventus, achieving further success, and returned to Manchester United in 2021.
@@ -146,7 +148,10 @@
         <button  id="vote-down" onclick="vote('down')">Messi</button>
         <p id="vote-result"></p>
     </div>
-  
-    <script src="script.js"></script>
+<footer>
+    <br><br>
+    <p class="center">حقوق النشر &copy; 2024 NIDHAL WEB</p>
+    <br><br>
+</footer>
 </body>
 </html>
