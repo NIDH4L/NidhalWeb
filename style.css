@@ -14,7 +14,7 @@ header{
     direction: rtl;
     color: black; 
     transition: background-color 0.3s, color 0.3s;
-    background-image: url('https://i.ibb.co/p0cN6KT/unnamed.jpg'); /* تحديد صورة الخلفية */
+    background-image: url('https://i.ibb.co/Nx9XTp2/LAYOUT-440x285-FWC22-DP1-INTL-BD-2.webp'); /* تحديد صورة الخلفية */
     background-size: 1350px 320px ; /* جعل الصورة تغطي الشاشة بالكامل */
     background-repeat: no-repeat; /* عدم تكرار الصورة */
     background-position: center top; /* تحديد موضع الصورة في الوسط */
